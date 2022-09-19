@@ -1,6 +1,6 @@
 <?php
 
-$server = "localhost";
+$server = "street_hut_server";
 $user = "root";
 $password = "";
 $db = "street_hut_db";
