@@ -1,4 +1,14 @@
 # PHP as Linux Web App on Azure
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Azure subscription 1 (5b28da3f-2acf-4cab-bacc-7f05334588df)'
+    appType: 'webAppLinux'
+    appName: 'Street-hut'
+    deployToSlotOrASE: true
+    resourceGroupName: 'Street-hut_group'
+    slotName: 'production'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    runtimeStack: 'PHP|8.0'
 # Build, package and deploy your PHP project to Azure Linux Web App.
 # Add steps that run tests and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/php
